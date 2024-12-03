@@ -2,20 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply font-primary bg-primary text-white leading-loose;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+
+  }
+
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #00ff99
+  }
+
+  .custom-toast-bottom-center {
+    background-color: #232329 !important;
+    /* สีพื้นหลัง */
+    color: white !important;
+    /* สีข้อความ */
+    border-radius: 8px !important;
+    /* มุมโค้ง */
+    padding: 16px !important;
+    /* ระยะห่างด้านใน */
+    text-align: center !important;
+    /* จัดข้อความตรงกลาง */
+    max-width: 300px !important;
+    /* กำหนดความกว้าง */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3) !important;
+    /* เงา */
+    
+  }
+
+   /* Styling the scrollbar */
+   ul::-webkit-scrollbar {
+    height: 5px; /* height of the scrollbar */
+  }
+  ul::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* green color for the scrollbar thumb */
+    border-radius: 10px;
+  }
+  ul::-webkit-scrollbar-track {
+    background-color: #292929; /* light gray background for the track */
+    border-radius: 10px;
+  }
 }
