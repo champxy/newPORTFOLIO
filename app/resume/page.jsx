@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { ABOUT_TEXT, CONTACT, EDUCATION, EXPERIENCES, SKILLS } from "../constants/constant";
-import { Customcopytoastify } from "@/utils/customcopytoastify";
+import { Customcopytoastify } from "@/utils/Customcopytoastify";
 import Image from "next/image";
 
 
