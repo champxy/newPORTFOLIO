@@ -7,6 +7,7 @@ const project6 = "/assets/projects/project5.png";
 const project7 = "/assets/projects/project6.png";
 const project8 = "/assets/projects/project7.png";
 const project9 = "/assets/projects/kingcamp.png";
+const project10 = "/assets/projects/ipaddress.png";
 
 
 export const HERO_CONTENT = `I'm not that good, but I never give up. I don't quit. I’m always hungry for more, always open to learning and improving. I try to get better every day and do everything for my mom. I'm incredibly patient if you don’t believe me, I’ve been a Manchester United fan for over 10 years.`;
@@ -129,6 +130,15 @@ export const PROJECTS = [
       "Website for camping, user create Landmark to share their camping experience and location.",
     technologies: ["Next.js(v15)", "Clerk auth", "Supabase", "Tailwind CSS", "shadcn ui", ],
     github : "https://github.com/champxy/Kingcamp"
+  },
+  {
+    id : "10",
+    title: "IP Address Up/Down Tracker",
+    image: project10,
+    description:
+      "IP Address Tracker is a web application that add address from user and show the status of the address.",
+    technologies: ["Next.js(v15)", "Nodejs", "Socket.io" ,"Express", "Tailwind CSS", "shadcn ui, mySQL"],
+    github : ""
   }
 ];
 
